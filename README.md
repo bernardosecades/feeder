@@ -37,6 +37,9 @@ and make unit test in a easy way as well.
 We could have put other structure folder like domain, infrastructure, application ... but in this case we keep simple because
 is a really small service so we don´t want increase the complexity of structure folders or more layers in this case.
 
+We have used testify like dependencies only because assertions are more semantic and is quit standar in the community 
+but mocks struct were created manually, by the way we can delete that dependency in a easy way with small changes in tests.
+
 ## Timeout and signal system
 
 We solve with context propagation, `signal.NotifyContext` and `context.WithTimeout` to close the application following the 
