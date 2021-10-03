@@ -52,7 +52,7 @@ func TestServiceReportRunSafelyConcurrently(t *testing.T) {
 	assert.EqualValues(t, (numberRoutines * 1) - 1, totalDuplicated)
 }
 
-func TestServicePersistWhenStorageDontContainAnySkuAddedInThisRunning(t *testing.T) {
+func TestServicePersistWhenStorageAlreadyContainOneSkuAddedInThisRunning(t *testing.T) {
 	mock := &MockSkuRepository{}
 	svc := service.NewService(mock, MockLoggerSvc{})
 
@@ -70,7 +70,7 @@ func TestServicePersistWhenStorageDontContainAnySkuAddedInThisRunning(t *testing
 	assert.EqualValues(t, 1, totalSkipped)
 }
 
-func TestServicePersistWhenStorageAlreadyContainOneSkuAddedInThisRunning(t *testing.T) {
+func TestServicePersistWhenStorageDontContainAnySkuAddedInThisRunning(t *testing.T) {
 	mock := &MockSkuRepository{}
 	svc := service.NewService(mock, MockLoggerSvc{})
 
