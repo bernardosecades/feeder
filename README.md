@@ -31,6 +31,12 @@ The Application must write a de-duplicated list of these numbers to a log file i
     
 ## Thechnical side
 
+We have used ports and adapters architecture, that allow us can change infrastructure of repository or logs really easy
+and make unit test in a easy way as well.
+
+We could have put other structure folder like domain, infrastructure, application ... but in this case we keep simple because
+is a really small service so we don´t want increase the complexity of structure folders or more layers in this case.
+
 ## Timeout and signal system
 
 We solve with context propagation, `signal.NotifyContext` and `context.WithTimeout` to close the application following the 
