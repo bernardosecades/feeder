@@ -15,6 +15,8 @@ lint: ; $(info Linting feeder...)
 .PHONY: run
 ## Run feeder service. Usage: 'make run'
 run: ; $(info Starting feed sever...)
+	docker-compose up -d --force-recreate db
+	sleep 5s
 	go run ./cmd/feedersrv/.
 
 .PHONY: test

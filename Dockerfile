@@ -25,8 +25,8 @@ RUN cd cmd/feedersrv && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags=
 # Compress binary files
 RUN upx /bin/feedersrv
 
-# Expose port 3000 to the outside world
-EXPOSE 3333
+# Expose port 4000 to the outside world
+EXPOSE 4000
 
 # Command to run the executable
 ENTRYPOINT ["/bin/feedersrv"]
@@ -45,7 +45,7 @@ RUN  ls -la /go/bin/
 # Use an unprivileged user.
 USER appuser
 # Expose port 3000 to the outside world
-EXPOSE 3333
+EXPOSE 4000
 
 # Command to run the executable
 ENTRYPOINT ["/go/bin/feedersrv"]

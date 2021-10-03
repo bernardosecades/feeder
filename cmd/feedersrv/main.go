@@ -16,7 +16,7 @@ func main()  {
 	cf := server.Config{
 		Protocol:  "tcp",
 		Host:      "",
-		Port:      env.GetEnvOrFallback("SVC_PORT", "3333"),
+		Port:      env.GetEnvOrFallback("SVC_PORT", "4000"),
 		KeepAlive: time.Second * 60,
 		MaxConn:   5,
 	}
