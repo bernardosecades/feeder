@@ -91,11 +91,11 @@ or expire time (keepAlive parameter).
 
 Log file generated in demo `feeder_2021-10-03T17:12:09.608155+02:00.log`:
 
-`
+```
 INFO: 2021/10/03 17:14:04 Added sku:AAAA-1
 INFO: 2021/10/03 17:14:04 Added sku:AAAA-2
 INFO: 2021/10/03 17:14:04 Added sku:AAAA-3
-`
+```
 
 Rows inserted in database:
 
