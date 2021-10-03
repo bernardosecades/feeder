@@ -1,10 +1,12 @@
 package server_test
 
 import (
-	"context"
 	"github.com/bernardosecades/feeder/pkg/server"
 	"github.com/bernardosecades/feeder/pkg/service"
+
 	"github.com/stretchr/testify/assert"
+
+	"context"
 	"io"
 	"net"
 	"testing"

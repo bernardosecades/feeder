@@ -1,11 +1,11 @@
 package value
 
 import (
-	"errors"
-	"strings"
-
 	"github.com/bernardosecades/feeder/pkg/tools/numberfn"
 	"github.com/bernardosecades/feeder/pkg/tools/stringfn"
+
+	"errors"
+	"strings"
 )
 
 const separator = "-"

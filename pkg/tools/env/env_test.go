@@ -2,7 +2,9 @@ package env_test
 
 import (
 	"github.com/bernardosecades/feeder/pkg/tools/env"
+
 	"github.com/stretchr/testify/assert"
+
 	"os"
 	"testing"
 )

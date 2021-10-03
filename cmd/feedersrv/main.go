@@ -1,12 +1,13 @@
 package main
 
 import (
-	"context"
 	"github.com/bernardosecades/feeder/pkg/logger"
 	"github.com/bernardosecades/feeder/pkg/repository"
 	"github.com/bernardosecades/feeder/pkg/server"
 	"github.com/bernardosecades/feeder/pkg/service"
 	"github.com/bernardosecades/feeder/pkg/tools/env"
+
+	"context"
 	"log"
 	"time"
 )

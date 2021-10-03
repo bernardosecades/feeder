@@ -2,7 +2,9 @@ package stringfn_test
 
 import (
 	"github.com/bernardosecades/feeder/pkg/tools/stringfn"
+
 	"github.com/stretchr/testify/assert"
+
 	"testing"
 )
 

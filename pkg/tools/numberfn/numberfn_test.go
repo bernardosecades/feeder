@@ -2,7 +2,9 @@ package numberfn_test
 
 import (
 	"github.com/bernardosecades/feeder/pkg/tools/numberfn"
+
 	"github.com/stretchr/testify/assert"
+
 	"testing"
 )
 

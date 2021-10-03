@@ -1,12 +1,13 @@
 package repository
 
 import (
-	"database/sql"
-	"fmt"
 	"github.com/bernardosecades/feeder/pkg/value"
-	"strings"
 
+	"database/sql"
 	_ "github.com/lib/pq"
+
+	"fmt"
+	"strings"
 )
 
 type Sku interface {

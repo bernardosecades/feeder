@@ -3,7 +3,9 @@ package service_test
 import (
 	"github.com/bernardosecades/feeder/pkg/service"
 	"github.com/bernardosecades/feeder/pkg/value"
+
 	"github.com/stretchr/testify/assert"
+
 	"sync"
 	"testing"
 )

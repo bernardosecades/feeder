@@ -2,7 +2,9 @@ package value_test
 
 import (
 	"github.com/bernardosecades/feeder/pkg/value"
+
 	"github.com/stretchr/testify/assert"
+
 	"testing"
 )
 

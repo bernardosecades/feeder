@@ -1,11 +1,12 @@
 package server
 
 import (
+	"github.com/bernardosecades/feeder/pkg/service"
+
 	"bufio"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/bernardosecades/feeder/pkg/service"
 	"log"
 	"net"
 	"os/signal"

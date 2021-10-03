@@ -2,7 +2,9 @@ package logger_test
 
 import (
 	"github.com/bernardosecades/feeder/pkg/logger"
+
 	"github.com/stretchr/testify/assert"
+	
 	"io/ioutil"
 	"os"
 	"testing"

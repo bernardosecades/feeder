@@ -4,6 +4,7 @@ import (
 	"github.com/bernardosecades/feeder/pkg/logger"
 	"github.com/bernardosecades/feeder/pkg/repository"
 	"github.com/bernardosecades/feeder/pkg/value"
+
 	"sync"
 )
 

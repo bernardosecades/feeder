@@ -4,7 +4,9 @@ import (
 	"github.com/bernardosecades/feeder/pkg/repository"
 	"github.com/bernardosecades/feeder/pkg/tools/env"
 	"github.com/bernardosecades/feeder/pkg/value"
+
 	"github.com/stretchr/testify/assert"
+
 	"testing"
 )
 
