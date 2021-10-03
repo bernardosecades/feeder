@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  feeder:
+    build:
+      context: .
+      target: builder # it'll use the same Dockerfile as prod, but stop at the builder stage to can execute go test
+    links:
+      - db
+    environment:
+      DB_HOST: db   # hostname database inside of container
+      DB_PORT: 5432
+      DB_PASS: feeder
+      DB_USER: feeder
+      DB_NAME: feeder
+      SVC_PORT: 3333
+    ports:
+      - 3333:3333
+  db:
+    image: postgres:10.12-alpine
+    environment:
+      POSTGRES_USER: feeder
+      POSTGRES_PASSWORD: feeder
+      POSTGRES_DB: feeder
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 5416:5432
